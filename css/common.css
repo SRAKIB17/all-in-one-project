@@ -55,6 +55,9 @@ header .logo{
     padding: 5px;
     padding-left: 8px;
 }
+.leftMenu ul li a{
+    color: white;
+}
 .leftMenu ul li:hover,#result li:hover {
     cursor: pointer;
     border-radius: 10px;
