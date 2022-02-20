@@ -36,6 +36,9 @@ header .logo{
     color: white;
     font-size: 18px;
 }
+#home a {
+    color: white;
+}
 /* for left menu  */
 .leftMenu,footer{
     width: 100%;

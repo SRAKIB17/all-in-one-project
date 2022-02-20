@@ -55,7 +55,8 @@ function resultReturn(){
 
         let slice = pageResult.slice(index, index + searchQ.length);
         let splitJoin = pageResult.split(slice).join('<span class="highlight">'+slice+'</span>')
-        getResult += `<li onclick='goPage(this)'>`+splitJoin+`</li>`;
+        getResult += `<li>
+        <a href="#${pageResult}#services"  onclick='goPage(this)'>`+splitJoin+`</a></li>`;
         
     }
     
