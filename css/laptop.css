@@ -1,0 +1,52 @@
+@media screen and (min-width: 990px) {
+    body {
+      background-color: lightgreen;
+    }
+
+    body{
+        background-color: aliceblue;
+        display: grid;
+        overflow: hidden;
+        grid-template-columns: repeat(10, minmax(0,1fr));
+    }
+    header{
+        grid-column: 1 / -1;
+    }
+    #home{
+        margin-right: 10px;
+        border-radius: 0 5px 5px 0;
+    }
+    #leftMenuBar{
+        display: none;
+    }
+    /* for left menu  */
+    .leftMenu{
+        overflow: hidden;
+        grid-column: 1 / 3;
+    }
+    .leftMenu #left{
+        overflow: auto;
+        padding-right: 15px;
+    }
+
+    /* .leftMenu::-webkit-scrollbar {
+        display: none;
+    } */
+    .centerMenu{
+        border-left: 2px solid white;
+        grid-column: 3 / 9;
+    }
+
+    footer{
+        border-left: 2px solid white;
+        position: relative;
+        grid-column: 9 / 11;
+    }
+
+    .copyright {
+        position: absolute;
+        bottom: 25px;
+        left: 10%;
+        right: 10%;
+    }
+}

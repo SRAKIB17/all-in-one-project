@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            color: white;
+        }
+        :root{
+            --btnBg:  #0d376d;
+
+            --btn: 1px solid #6681a3;
+        }
+        button{
+            border: var(--btn);
+            background-color: var(--btnBg);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h3>
+            Try it    
+        </h3>
+        <div>
+            
+            <div>
+                <select id="j-url">
+                    <option value="https://www.w3schools.com/">w3schools</option>
+                    <option value="https://developer.mozilla.org/">MDN</option>
+                    <option value="https://app.netlify.com/">netlify</option>
+                </select>
+                <button id="jump">
+                    Go
+                </button>    
+            </div>
+            
+        </div>
+    </section>
+    <section>
+        <h3>
+            <b>1.</b> copy this js file and paste it on your webpage: <button onclick="copy('jsScript')"">Copy code</button>
+        </h3>
+
+        
+        <textarea name="" id="jsScript" cols="40" rows="10">
+
+<script>
+    document.getElementById('jump').addEventListener('click', function(){
+    const urlLink = document.getElementById('j-url').value;
+    location.assign(`https://my-project-calculate.netlify.app/?urlj=${urlLink}`)
+    })
+</script>
+        </textarea>
+        <div>
+            <h3>
+                <b>Or.</b> copy it and paste on your page :(we recommand it)<button onclick="copy('jsAnothScript')"">Copy code</button>
+            </h3>
+
+        </div>
+        <div>
+            <textarea name="" id="jsAnothScript" cols="40" rows="10">
+
+<script src="https://my-project-calculate.netlify.app/js/services/jump/jumping.js">
+</script>
+            </textarea>
+        </div>
+        
+        <!-- for html code  -->
+        <div>
+            <h3>
+                <b>2.</b> Copy this html code and paste your site where you want to add jump box.
+                <button onclick="copy('htmlCode')"">Copy code</button>
+            </h3>
+        </div>
+        <div>
+            <textarea name="" id="htmlCode" cols="40" rows="10">
+
+<select id="j-url">
+    <option value="url">Title</option>
+    <option value="url2">Title - 01</option>
+    <option value="url3">Title - 02</option>
+    <option value="url4">Title - 03</option>
+    <option value="url5">Title - 04</option>
+    <option value="url5">Title - 05</option>
+</select>
+<button id="jump">
+ Go
+</button> 
+            </textarea>
+        </div>
+    </section>
+    
+    <!-- <input type="text" id="jj"><button id="jjj" >decodeURI</button>
+    <p id="demo"></p> -->
+
+    <script src="./jump.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+@media screen and (max-width: 989px)  {
+    /* for lef menu  */
+    body{
+        overflow-x: hidden;
+    }
+    header{
+        width: calc(100% + 15px);
+    }
+    #leftMenuBar{
+        display: block;
+        margin-right: 16px;
+        border: var(--btn);
+        background-color: #485e7a;
+        border-radius: 0 5px 5px 0;
+        color: white;
+    }
+    #search {
+        position: relative;
+        width: 90%;
+    }
+    #search-inputDiv {
+        position: absolute;
+        right: 0;
+        /* bottom: -11px; */
+        top: -13px;
+    }
+    body {
+        margin: 5px;
+    }
+    #displayLeftMenu{
+        width: calc(100% + 15px);
+        display: none;
+        animation: leftMenu 500ms ease 1;
+        font-size: 15px;
+    }
+    @keyframes leftMenu {
+        0%   {opacity: 0;}
+        25%  {opacity: 0.25;}
+        50%  {opacity:.5;}
+        75%  {opacity: 0.75;}
+        100% {opacity: 1;}
+    }
+    #footerMenu {
+        border-left: 2px solid white;
+        animation: leftMenu 500ms ease 1;
+        padding: 5px;
+        position: absolute;
+        right: 0;
+        display: none;
+    }
+    #showFooter {
+        position: absolute;
+        z-index: 5;
+        right: 10px;
+    }
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="pageTitle">Online converter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/search.css">
+    <link rel="stylesheet" href="./css/laptop.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+</head>
+<body onresize="reload()">
+    <header id="header">
+        <img src="./images/logo.png" alt="" class="logo">
+        <div>
+            <div class="search">
+                <div id="search">
+                    <div id="search-inputDiv">
+                        <input type="search"  class="search-input" id="search-input" placeholder="Search project" value="">
+                    </div>
+                        
+                </div>
+                <button id="SearchIcon"><i class="fa fa-search"></i></button>
+                <button id="home" onclick="goHome()"><i class="fa fa-home"></i></button>
+                <button id="leftMenuBar">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+            <div id="result">
+                <div id="busy">
+    
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="leftMenu" id="displayLeftMenu">
+        <section id="left">
+            <h3>My project List:</h3>            
+        </section>
+        
+    </main>
+    <main class="centerMenu">
+        <section id="center">
+            <iframe src="./Home.html" frameborder="0" id="htmlPage"></iframe>
+        </section>
+    </main>
+    <footer class="rightMenu" id="footerMenu">
+        <!-- social link  -->
+        <section id="footerSection">
+            <div class="social">
+                <div>
+                    <a href="https://facebook.com/rakib2017?_rdc=1&_rdr">
+                        <img src="./images/social/facebook.png" alt="">
+                    </a>
+                
+                </div>
+                <div>
+                    <a href="">
+                        <img src="./images/social/linkedin.png" alt="">
+                    </a>
+                
+                </div>
+                <div>
+                    <a href="">
+                        <img src="./images/social/twitter.png" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <img src="./images/social/google.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <!-- for share page -->
+            <div id="copyUrl">
+                gfg
+            </div>
+            <div class="copyright">
+                Copyright ©2022. <br> All rights reserved.
+            </div>
+        </section>
+    </footer>
+    <i class="fa fa-angle-double-left" style="font-size:48px;color:red" id="showFooter"></i>
+    <script src="./js/serach.js" ></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/break.js"></script>
+    <script src="./js/mobile.js"></script>
+
+    <script src="./js/services/jump/jump.js"></script>
+    <script src="./js/share.js"></script>
+    
+</body>
+</html>

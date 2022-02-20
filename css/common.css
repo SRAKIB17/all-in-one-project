@@ -1,0 +1,107 @@
+:root{
+    --header: #485e7a;
+    --headerBottomBorder: 2px solid #7d9bc0;
+
+    --btn: 1px solid #6681a3;
+
+    --MenuBg:  #485f7e;
+    --MenuColor: white;
+
+    --iframeBg: #485f7e;
+}
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Orbitron&family=Poppins:wght@100;200&display=swap');
+        
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+header{
+    border-bottom: var(--headerBottomBorder);
+    background-color: var(--header);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .logo{
+    padding: 10px;
+    width: 200px;
+    height: 65px;
+}
+/* home button */
+#home {
+    background-color: var(--header);
+    border: var(--btn);
+    color: white;
+    font-size: 18px;
+}
+/* for left menu  */
+.leftMenu,footer{
+    width: 100%;
+    color: var(--MenuColor);
+    background-color: var(--MenuBg);
+}
+.leftMenu #left{
+    padding: 10px;
+    width: 100%;
+} 
+.leftMenu ul{
+    list-style: none;
+    padding: 10px;
+}
+.leftMenu ul li, #result li{
+    padding: 5px;
+    padding-left: 8px;
+}
+.leftMenu ul li:hover,#result li:hover {
+    cursor: pointer;
+    border-radius: 10px;
+    margin-right: 2px;
+    background-color: #a1c4fd;
+    box-shadow: 12px 0 15px -4px rgba(31, 73, 125, 0.8), -12px 0 8px -4px rgba(31, 73, 125, 0.8);
+}
+.leftMenu ul li a {
+    text-decoration: none;
+}
+/* .leftMenu::-webkit-scrollbar {
+    display: none;
+} */
+
+
+.centerMenu{
+    width: 100%;
+}
+#center {
+    overflow: hidden;
+    width: 100%;
+    padding-right: 15px;
+    overflow-x: hidden;
+    background-color: var(--iframeBg);
+}
+#htmlPage {
+    font-family:  'Poppins-Medium';
+    padding-top: 5px;
+    padding-bottom: 10px;
+    width: calc(100% + 15px);
+    height: 99%;
+    overflow-x: hidden;
+    
+}
+
+/* footer option  */
+
+.social {
+    display: flex;
+    padding: 2px;
+}
+.social img {
+    width: 100%;
+}
+#copyUrl{
+    background-color: #000000;
+    padding: 5px;
+    border-radius: 5px;
+    border: var(--btn);
+    overflow-x: auto;
+}

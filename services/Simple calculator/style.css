@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Digital Numbers Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Digital Numbers Regular'), url('DigitalNumbers-Regular.woff') format('woff');
+}
+.button {
+    box-shadow: 1px 8px gray ;
+
+}
+.button:active {
+    transform: translateY(4px);
+}
+.Calculator {
+    box-shadow: 0 9px rgb(240, 231, 231),3px 0 rgb(240, 231, 231);
+}
+#input, #ans {
+    font-family: 'Digital Numbers Regular';
+    overflow: auto;
+    width: 100%;
+    overflow-x: hidden;
+}
+.result {
+    overflow: auto;
+    direction: rtl;
+}
