@@ -17,6 +17,7 @@
     }
     /* for left menu  */
     .leftMenu{
+        display: block !important;
         overflow: hidden;
         grid-column: 1 / 3;
     }
