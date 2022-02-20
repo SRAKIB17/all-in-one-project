@@ -42,6 +42,7 @@ header .logo{
     color: var(--MenuColor);
     background-color: var(--MenuBg);
 }
+
 .leftMenu #left{
     padding: 10px;
     width: 100%;

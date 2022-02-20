@@ -40,19 +40,9 @@ getId('search-input').addEventListener('change', function(event){
 function resultReturn(){
     let getResult = `<ul id='searchUl'>`;
 
-    let result = [];
-    for (const page of leftArrayTitle) {
-        if((searchQ == '' || searchQ == ' ' )){
-            getResult = 
-            `<div>
-                <h2 class="searchNotFound">Not Found 😢</h2>
-            </div>`
-        }
-        else if(page.toLowerCase().includes(searchQ.toLowerCase())){
-            result.push(page);
-            
-        }
-    }
+    
+    const result = leftArrayTitle.filter(x=> x.toLowerCase().includes(searchQ.toLowerCase()) && (searchQ != '' && searchQ != ' '))
+    
     if (result.length == 0){
         getResult = 
         `<div>
@@ -70,5 +60,4 @@ function resultReturn(){
     }
     
     getId('busy').innerHTML = getResult+'</ul>';
-    return result = []
 }
