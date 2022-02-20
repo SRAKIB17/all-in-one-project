@@ -35,6 +35,8 @@ function goPage(page){
     getId('result').style.display = 'none'
     getId('search-input').style.display = 'none'
     document.getElementById('htmlPage').src = localStorage.getItem('url-page');
+    // auto update copy link 
+    getId('copyUrl').value = getLink;
 }
 
 
@@ -42,21 +44,24 @@ titleMake()
 function titleMake(){
     const titleUrl = localStorage.getItem('url-page').split('/');
     const title = titleUrl[titleUrl.length-1];
-    console.log(title)
     getId('pageTitle').innerText = decodeURI(title);
 }
 
 
 // 
-function goHome(){
-    titleMake()
-    localStorage.setItem('url-page','Home.html')
-    getId('htmlPage').src = localStorage.getItem('url-page');
-}
+// function goHome(){
+//     titleMake()
+//     localStorage.setItem('url-page','Home.html')
+//     getId('htmlPage').src = localStorage.getItem('url-page');
+// }
 // iframe localStorage save date and use 
 if(localStorage.getItem('url-page')){
     getId('htmlPage').src = localStorage.getItem('url-page');
 }
-
-
+// auto add extenction end page
+if(location.hash == ''){
+    const getPageUrl = localStorage.getItem('url-page').split('/');
+    console.log(getPageUrl)
+    location.href = `#${getPageUrl[getPageUrl.length-1]}#${getPageUrl[getPageUrl.length-2]}`
+}
 
