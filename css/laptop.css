@@ -1,8 +1,4 @@
 @media screen and (min-width: 990px) {
-    body {
-      background-color: lightgreen;
-    }
-
     body{
         background-color: aliceblue;
         display: grid;
@@ -47,5 +43,8 @@
         bottom: 25px;
         left: 10%;
         right: 10%;
+    }
+    #showFooter{
+        display: none;
     }
 }

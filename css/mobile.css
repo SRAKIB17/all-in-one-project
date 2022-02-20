@@ -2,9 +2,18 @@
     /* for lef menu  */
     body{
         overflow-x: hidden;
+        display: grid;
+        grid-template-columns: repeat(10, minmax(0,1fr));
+        margin: 5px;
     }
     header{
         width: calc(100% + 15px);
+        grid-column: 1 / -1;
+    }
+
+    /* for left: section ; */
+    .leftMenu{
+        grid-column: 1/ -1;
     }
     #leftMenuBar{
         display: block;
@@ -24,9 +33,7 @@
         /* bottom: -11px; */
         top: -13px;
     }
-    body {
-        margin: 5px;
-    }
+
     #displayLeftMenu{
         width: calc(100% + 15px);
         display: none;
@@ -40,6 +47,14 @@
         75%  {opacity: 0.75;}
         100% {opacity: 1;}
     }
+    /* for centerMenu  */
+    .centerMenu{
+        grid-column: 1/-1;
+    }
+    /* footer menu  */
+    footer{
+        grid-column: 9 / -1;
+    }
     #footerMenu {
         border-left: 2px solid white;
         animation: leftMenu 500ms ease 1;
@@ -47,10 +62,18 @@
         position: absolute;
         right: 0;
         display: none;
+        top: 90px;
+        width: 150px;
+
+    }
+    #footerSection{
+        margin-top: 30px;
     }
     #showFooter {
         position: absolute;
         z-index: 5;
         right: 10px;
+        display: block;
+        top: 90px;
     }
 }
