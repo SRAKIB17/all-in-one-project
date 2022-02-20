@@ -54,23 +54,21 @@ header .logo{
     list-style: none;
     padding: 10px;
 }
-.leftMenu ul li, #result li{
+
+.leftMenu ul li a{
+    color: white;
+    text-decoration: none;
     padding: 5px;
     padding-left: 8px;
 }
-.leftMenu ul li a{
-    color: white;
-}
-.leftMenu ul li:hover,#result li:hover {
+.leftMenu ul a:hover{
     cursor: pointer;
     border-radius: 10px;
     margin-right: 2px;
     background-color: #a1c4fd;
     box-shadow: 12px 0 15px -4px rgba(31, 73, 125, 0.8), -12px 0 8px -4px rgba(31, 73, 125, 0.8);
 }
-.leftMenu ul li a {
-    text-decoration: none;
-}
+
 /* .leftMenu::-webkit-scrollbar {
     display: none;
 } */
