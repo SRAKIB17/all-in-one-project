@@ -102,10 +102,22 @@ header .logo{
 .social img {
     width: 100%;
 }
+#copyLink {
+    display: flex;
+    align-items: center;
+}
+#copyLink button{
+    margin-left: 5px;
+    border: var(--btn);
+    color: white;
+    background-color: var(--header);
+}
 #copyUrl{
+    color: white;
+    margin: 0 5px;
+    border-radius: 5px;
     background-color: #000000;
     padding: 5px;
-    border-radius: 5px;
     border: var(--btn);
     overflow-x: auto;
 }

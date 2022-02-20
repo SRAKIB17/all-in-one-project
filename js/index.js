@@ -38,16 +38,6 @@ function goPage(page){
 }
 
 
-
-
-// function goPage(link){
-//     localStorage.setItem('url-page','services/'+link.innerText);
-//     titleMake()
-//     getId('result').style.display = 'none'
-//     getId('search-input').style.display = 'none'
-//     getId('htmlPage').src = localStorage.getItem('url-page');
-// }
-// function for title 
 titleMake()
 function titleMake(){
     const titleUrl = localStorage.getItem('url-page').split('/');
@@ -67,3 +57,6 @@ function goHome(){
 if(localStorage.getItem('url-page')){
     getId('htmlPage').src = localStorage.getItem('url-page');
 }
+
+
+
