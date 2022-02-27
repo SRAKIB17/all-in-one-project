@@ -21,8 +21,12 @@ for (let index = 0; index < leftArrayTitle.length; index++) {
     leftUl.appendChild(li)
 }
 
+const loading = (display) =>{
+    getId('loading').style.display = display;
+}
 
 function goPage(page){
+    loading('flex')
     const getLink = page.href
     
     const splitLink = getLink.split('#');
@@ -37,6 +41,7 @@ function goPage(page){
     document.getElementById('htmlPage').src = localStorage.getItem('url-page');
     // auto update copy link 
     getId('copyUrl').value = getLink;
+    loading('none')
 }
 
 

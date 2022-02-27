@@ -72,6 +72,11 @@ header .logo{
     display: none;
 } */
 
+#loading {
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
 
 .centerMenu{
     width: 100%;
