@@ -70,3 +70,4 @@ if(location.hash == ''){
     location.href = `#${getPageUrl[getPageUrl.length-1]}#${getPageUrl[getPageUrl.length-2]}`
 }
 
+
