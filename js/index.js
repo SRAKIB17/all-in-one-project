@@ -59,7 +59,7 @@ function titleMake(){
 //     localStorage.setItem('url-page','Home.html')
 //     getId('htmlPage').src = localStorage.getItem('url-page');
 // }
-// iframe localStorage save date and use 
+// iframe localStorage save date and use
 if(localStorage.getItem('url-page')){
     getId('htmlPage').src = localStorage.getItem('url-page');
 }
