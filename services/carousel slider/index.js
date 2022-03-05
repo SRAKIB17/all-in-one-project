@@ -34,16 +34,16 @@ getId('prev').addEventListener('click',()=>{
 })
 
 // create slider veiw 
-if(getId('bottomInd')){
+// if(getId('bottomInd')){
     
-    for (let index = 0; index < getCarousel.length; index++) {
-        console.log(index)
-        const div = document.createElement('div');
-        div.className = 'indicator'
-        getId('bottomInd').appendChild(div)
+//     for (let index = 0; index < getCarousel.length; index++) {
+//         console.log(index)
+//         const div = document.createElement('div');
+//         div.className = 'indicator'
+//         getId('bottomInd').appendChild(div)
 
-    }
-}
+//     }
+// }
 
 
 // copy code 

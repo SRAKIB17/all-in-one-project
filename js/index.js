@@ -1,7 +1,7 @@
 // for Headers
 const Header = getId('header');
 // for left maenu 
-const leftArrayTitle = ['Jumping another page','Result convert cgp','Simple calculator','Temperature','Icon manager','BMI calculator']
+const leftArrayTitle = ['Jumping another page','Result convert cgp','Simple calculator','Temperature','Icon manager','BMI calculator', 'carousel slider']
 leftArrayTitle.sort();
 const left = getId('left');
 
