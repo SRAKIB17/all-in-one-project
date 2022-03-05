@@ -3,11 +3,11 @@ function count(id,value){
     const trimValue = value.trim()
 
     if(trimValue == ''){
-        console.log(653)
+        
     }
     else{
         const array = trimValue.split(',');
-        console.log(array)
+
         getId(id).innerText = array.length;
         getId(id).style.display = 'block'
     }

@@ -2,6 +2,9 @@
 function getId(id){
     return document.getElementById(id);
 }
+var totalEarnedPoint = 0;
+var avgCgpa = 0;
+var totalCredit = 0;
 function processingData(){
     const number = getId('number').value;
     const subjectCredit = getId('perSubjectCredit').value;
@@ -18,7 +21,7 @@ function processingData(){
     //cgpa * per subject
     let earnedPoint = []; 
    
-    let avgCgpa = 0;
+    
     if ((number == ''|| number == ' ')||(subjectCredit == '' || subjectCredit == ' ')){
         getId('errorMsg').innerText = "Something is wrong";
     }
@@ -26,9 +29,11 @@ function processingData(){
         numberArray = number.split(',');
         subjectCreditArray = subjectCredit.split(',');
         createResult(numberArray,cgpaCountList,cgpaPoint)
-        let totalCredit = 0;
+    
         earnedPointCalc(cgpaPoint,subjectCreditArray,subCreditList,earnedPoint,avgCgpa);
 
+        avgCgpa = totalEarnedPoint / Number(totalCredit);
+        
         resultDataTable(avgCgpa,numberArray,subCreditList,earnedPoint,cgpaCountList,cgpaPoint)
     }
     
@@ -97,9 +102,8 @@ function createResult(numberArray,cgpaCountList,cgpaPoint){
     return cgpaCountList , cgpaPoint;
 }
 // earnedPoint calculator 
-function earnedPointCalc(cgpaPoint,subjectCreditArray,subCreditList,earnedPoint,avgCgpa){
-    let totalEarnedPoint = 0;
-    let totalCredit = 0;
+function earnedPointCalc(cgpaPoint,subjectCreditArray,subCreditList,earnedPoint){
+    
     for (let index = 0; index < cgpaPoint.length; index++){
         const cgpa = cgpaPoint[index];
         const subCredit = Number(subjectCreditArray[index]); //convert credit 
@@ -110,15 +114,12 @@ function earnedPointCalc(cgpaPoint,subjectCreditArray,subCreditList,earnedPoint,
         totalCredit += subCredit;
        
     }
-    avgCgpa = totalEarnedPoint / Number(totalCredit)
-    return cgpaPoint,subjectCreditArray,subCreditList,earnedPoint,avgCgpa;
 }
 // tableData show result 
 function resultDataTable(avgCgpa,numberArray,subCreditList,earnedPoint,cgpaCountList,cgpaPoint){
     // tableData decorate
     let tr = ''
     let i = 0;
-    console.log(avgCgpa)
     while (i <cgpaPoint.length) {
         let creditEror = ''
         let earnedPointEror = ''
