@@ -40,6 +40,8 @@
         animation: leftMenu 500ms ease 1;
         font-size: 15px;
     }
+
+    
     @keyframes leftMenu {
         0%   {opacity: 0;}
         25%  {opacity: 0.25;}
